@@ -1,0 +1,84 @@
+body{
+    height: 100vh;
+    background-image:linear-gradient(rgb(248, 162, 162),rgb(248, 162, 162));
+}
+.container{
+    max-width: 955px;
+    border-radius: 23px;
+    background-color: aliceblue;
+    margin: auto;
+    height: 80vh;
+    padding: 25px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+.message{
+    background-image:linear-gradient(rgb(172, 243, 172),rgb(7, 185, 7));
+    width: 24%;
+    padding: 10px;
+    margin: 17px 7px;
+    border-radius:9px;
+    /* border: 2px solid green; */
+}
+.left{
+    float: left;
+    clear: both;
+    background-image:linear-gradient(rgb(224, 100, 248),rgb(235, 204, 241));
+}
+.right{
+    float: right;
+    clear: both;
+}
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+   
+}
+#messageinp{
+    width: 90%;
+    border: none;
+    height: 30px;
+    border-radius: 8px;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 7px;
+    background-color: rgb(156, 52, 253);
+}
+@media (min-width:551px)and(max-width:700px){
+    .message{
+        width: 40%;
+    }
+    .btn{
+        margin: 8px 8px;
+    }
+}
+@media (max-width:550px) {
+    .message{
+        background-image:linear-gradient(rgb(172, 243, 172),rgb(7, 185, 7));
+        width: 74%;
+        padding: 10px;
+        margin: 17px 7px;
+        border-radius:9px;
+    }
+    .left{
+        float: left;
+        clear: both;
+        text-overflow:clip;
+        background-image:linear-gradient(rgb(224, 100, 248),rgb(235, 204, 241));
+    }
+    .right{
+        float: right;
+        clear: both;
+    }
+    .btn{
+        margin: 8px 8px;
+    }
+}
