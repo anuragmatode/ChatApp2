@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page For App</title>
+</head>
+<style>
+    .cont{
+        width: 100vw;
+        height: 20em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .log{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 15em;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-image: linear-gradient(rgb(214, 167, 252),rgb(96, 6, 138));
+    }
+    .log input,label{
+        margin: 4px 4px;
+        text-align: center;
+        width: 88%;
+        height: 12%;
+        border-radius: 9px;
+        font-weight: bolder;
+        border: none;
+    }
+    #btn1{
+        width: 15%;
+        margin: 15px;
+        height: 10%;
+        border-radius: 9px;
+        border: none;
+        background-color: rgb(199, 209, 199);
+    }
+</style>
+<body>
+    <h1 style="text-align: center; background-color: antiquewhite; width: 100vw;">Login Form</h1>
+    <div class="cont">
+    <div class="log">
+        <label for="">Enter your name</label>
+        <input type="text" id="username">
+        <label for="">Enter password provided by Developer</label>
+        <input type="text" name="pass" id="password">
+        <button id="btn1" type="submit" onclick="SubmitF()">Submit</button>
+    </div>
+</div>
+<script>
+   function SubmitF(){
+    var un=document.getElementById("username").value;
+    var up=document.getElementById("password").value;
+    if(un!==""&&up==="Anu123"){
+        alert("Login Successful");
+        window.location.href="index.html";
+        var un2=document.getElementById("username");
+        un2.value="";
+        var up2=document.getElementById("password");
+        up2.value="";
+        
+    }
+    else{
+        alert("Without Developer Password You Cannot Login");
+        var un2=document.getElementById("username");
+        un2.value="";
+        var up2=document.getElementById("password");
+        up2.value="";
+    }
+    
+   }
+</script>
+</body>
+</html>
